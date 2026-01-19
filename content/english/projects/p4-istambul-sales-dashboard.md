@@ -14,15 +14,15 @@ This was the final project for the Visualization Modeling course. The goal was t
 
 Section 1: Metrics Overview
 
-![alt text](/project_images/p4-1.png)
+![alt text](/project_images/p4-istambul-sales/p4-1.png)
 
 Section 2: Sales Details
 
-![alt text](/project_images/p4-2.png)
+![alt text](/project_images/p4-istambul-sales/p4-2.png)
 
 Section 3: Sales Count Details
 
-![alt text](/project_images/p4-3.png)
+![alt text](/project_images/p4-istambul-sales/p4-3.png)
 
 ### Data Source
 

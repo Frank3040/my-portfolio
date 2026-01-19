@@ -18,7 +18,7 @@ tags = ["python", "data", "pipeline", "dbt", "airflow", "docker", "postgresql", 
 
 ## System Architecture
 
-![Project Architecture Diagram](/project_images/etil-pipeline-diagram.jpg)
+![Project Architecture Diagram](/project_images/p2-streaming/etl-pipeline-diagram.jpg)
 
 ### *You can find the code for this project in [GitHub]().*
 
@@ -87,7 +87,7 @@ All components run in a **Dockerized environment** to ensure consistency and rep
 
 #### DAG Overview
 
-![Dag Diagram](/project_images/dag-streaming-pipeline.png)
+![Dag Diagram](/project_images/p2-streaming/dag-streaming-pipeline.png)
 
 The Airflow DAG `video_streaming_elt_pipeline` consists of the following key tasks:
 - **Create MongoDB Collections**: Initializes the MongoDB source database.
@@ -98,8 +98,13 @@ The Airflow DAG `video_streaming_elt_pipeline` consists of the following key tas
 - **Transform with dbt**: Executes dbt models to transform raw data into a dimensional model in the `trusted` schema.
 
 ## Analytics Dashboard
+First section:
 
-![Power BI Dashboard Screenshot](/project_images/power_bi_dashboard.png)
+![Power BI Dashboard Screenshot](/project_images/p2-streaming/p2-3.png)
+
+Second section:
+
+![Power BI Dashboard Screenshot](/project_images/p2-streaming/p2-4.png)
 
 A **Power BI dashboard** was built on top of the dimensional model to visualize key performance indicators (KPIs), including:
 - User demographics and subscription distribution  

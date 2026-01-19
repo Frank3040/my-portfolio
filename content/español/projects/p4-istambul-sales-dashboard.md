@@ -14,15 +14,15 @@ Este fue el proyecto final para el curso de Modelado de Visualización. El objet
 
 Sección 1: Resumen de métricas
 
-![alt text](/project_images/p4-1.png)
+![alt text](/project_images/p4-istambul-sales/p4-1.png)
 
 Sección 2: Detalles de ventas
 
-![alt text](/project_images/p4-2.png)
+![alt text](/project_images/p4-istambul-sales/p4-2.png)
 
 Sección 3: Detalles de Ordenes
 
-![alt text](/project_images/p4-3.png)
+![alt text](/project_images/p4-istambul-sales/p4-3.png)
 
 ### Fuentes de Datos
 

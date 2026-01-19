@@ -1,5 +1,5 @@
 +++
-title = "Desarrollo de unEnd-to-End ELT Pipeline para una Plataforma de Video Streaming"
+title = "Desarrollo de un End-to-End ELT Pipeline para una Plataforma de Video Streaming"
 date = 2025-10-10
 description = "Este proyecto es la implementación de un end-to-end ELT pipeline diseñado para analizar el rendimiento de una plataforma de video streaming utilizando datos sintéticos."
 tags = ["python", "data", "pipeline", "dbt", "airflow", "docker", "postgresql", "mongodb", "powerbi"]
@@ -17,7 +17,7 @@ tags = ["python", "data", "pipeline", "dbt", "airflow", "docker", "postgresql", 
 
 ## Arquitectura del Sistema
 
-![Project Architecture Diagram](/project_images/etil-pipeline-diagram.jpg)
+![Project Architecture Diagram](/project_images/p2-streaming/etl-pipeline-diagram.jpg)
 
 ### *Puedes encontrar el código de este proyecto en [GitHub]().*
 
@@ -86,7 +86,7 @@ Todos los componentes se ejecutan en un **entorno Dockerizado** para garantizar 
 
 #### DAG Overview
 
-![Dag Diagram](/project_images/dag-streaming-pipeline.png)
+![Dag Diagram](/project_images/p2-streaming/dag-streaming-pipeline.png)
 
 El DAG de Airflow `video_streaming_elt_pipeline` consta de las siguientes tareas principales:
 - **Create MongoDB Collections**: Inicializa la base de datos fuente MongoDB.
@@ -98,7 +98,13 @@ El DAG de Airflow `video_streaming_elt_pipeline` consta de las siguientes tareas
 
 ## Dashboard Analítico
 
-![Power BI Dashboard Screenshot](/project_images/power_bi_dashboard.png)
+Primera sección: 
+
+![Power BI Dashboard Screenshot](/project_images/p2-streaming/p2-3.png)
+
+Segunda sección:
+
+![Power BI Dashboard Screenshot](/project_images/p2-streaming/p2-4.png)
 
 Un **Power BI dashboard** fue desarrollado sobre el modelo dimensional para visualizar indicadores clave de rendimiento (KPIs), incluyendo:
 - Distribución de datos demográficos y de suscripción de usuarios  
