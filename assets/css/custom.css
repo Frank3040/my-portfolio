@@ -1,38 +1,89 @@
 /* Custom styles for Project Cards (GitHub-like) */
 
 .projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 0;
-  list-style: none;
-  /* Remove default list bullets */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+    /* Remove default list bullets */
 }
 
 .project-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.5rem;
-  border: 1px solid rgba(128, 128, 128, 0.4);
-  border-radius: 6px;
-  background-color: rgba(128, 128, 128, 0.05);
-  transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 6px;
+    background-color: rgba(128, 128, 128, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.project-item:hover {
+    border-color: #58a6ff;
+    /* Highlight on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
-  display: block;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  /* Increased spacing */
-  text-decoration: none;
-  line-height: 1.2;
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    /* Increased spacing */
+    text-decoration: none;
+    line-height: 1.2;
 }
 
 .project-desc {
-  font-size: 1.6rem;
-  opacity: 0.9;
-  margin: 0;
-  line-height: 1.6;
+    font-size: 1.6rem;
+    opacity: 0.9;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Custom Navigation Styles */
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark Mode Navigation */
+body.colorscheme-dark .navigation {
+    background-color: #212121;
+    /* Strong dark grey */
+    border-bottom: 1px solid #333;
+}
+
+/* Light Mode Navigation */
+body.colorscheme-light .navigation {
+    background-color: #FFFFFF;
+    /* High contrast white */
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Push content down so it doesn't hide behind the fixed header */
+body {
+    padding-top: 5px;
+    /* Ensure content isn't hidden behind the fixed header */
+}
+
+/* Mobile Menu Adjustments */
+@media only screen and (max-width: 768px) {
+    body.colorscheme-dark .navigation-list {
+        background-color: #212121;
+    }
+
+    body.colorscheme-light .navigation-list {
+        background-color: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        /* Add border for definition in light mode */
+    }
 }
