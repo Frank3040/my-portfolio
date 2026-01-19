@@ -1,0 +1,38 @@
+/* Custom styles for Project Cards (GitHub-like) */
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+  /* Remove default list bullets */
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 6px;
+  background-color: rgba(128, 128, 128, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.project-title {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  /* Increased spacing */
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.project-desc {
+  font-size: 1.6rem;
+  opacity: 0.9;
+  margin: 0;
+  line-height: 1.6;
+}

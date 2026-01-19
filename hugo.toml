@@ -1,0 +1,107 @@
+baseurl = "https://Frank3040.github.io/"
+title = "francisco"
+theme = "hugo-coder"
+languagecode = "en"
+
+defaultcontentlanguage = "en"
+
+
+[pagination]
+pagerSize = 20
+
+[services]
+[services.disqus]
+shortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Francisco Chan"
+  info = "Data Engineer"
+  description = "Francisco Chan's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar3.png"
+  #gravatar = ""
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2025
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/Frank3040"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/francisco-gabriel-chan-pech-9a0744293/"
+[[params.social]]
+  name = "Gmail"
+  icon = "fa fa-envelope fa-2x"
+  weight = 3
+  url = "mailto:francisco.chpech@gmail.com"
+
+[languages]
+  [languages.en]
+  languageName = "English"
+  contentDir = "content/english" 
+
+  # Menu links
+  [[languages.en.menu.main]]
+    name = "Home"
+    weight = 1
+    url  = "/"
+  [[languages.en.menu.main]]
+    name = "Projects"
+    weight = 2
+    url  = "projects/"
+  [[languages.en.menu.main]]
+    name = "About"
+    weight = 3
+    url = "about/"
+  
+  [languages.es]
+  languageName = "Español"
+  contentDir = "content/español"
+
+  [languages.es.params]
+    author = "Francisco Chan"
+    info = "Ingeniero en Datos"
+
+  # Spanish Menu links
+  [[languages.es.menu.main]]
+    name = "Inicio"
+    weight = 1
+    url  = "/"
+  [[languages.es.menu.main]]
+    name = "Proyectos"
+    weight = 2
+    url  = "projects/"
+  [[languages.es.menu.main]]
+    name = "Sobre mí"
+    weight = 3
+    url = "about/"
+
+
+
